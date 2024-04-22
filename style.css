@@ -1,0 +1,150 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding-bottom: 60px; /* Adjust according to footer height */
+  position: relative;
+}
+
+header {
+  background-color: #009246; /* Green */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Ensure header stays on top */
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #009246;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1; /* Ensure container stays on top */
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #ce2b37; /* Red */
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1; /* Ensure footer stays on top */
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.whatsapp-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 50px; /* Adjust width as needed */
+height: 50px; /* Adjust height as needed */
+background-color: #25d366; /* WhatsApp green */
+color: #fff;
+border-radius: 50%;
+font-size: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+z-index: 3; /* Increase the z-index to ensure it's above other elements */
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none; /* Remove default link underline */
+}
+
+.whatsapp-button:hover {
+background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
+cursor: pointer;
+}
+
+
+.whatsapp-button img {
+  width: 40px; /* Adjust WhatsApp button icon size */
+}
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom:150px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: red; /* Red background color */
+color: white; /* White text color */
+cursor: pointer; /* Add a pointer cursor on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+background-color: #555; /* Dark grey background on hover */
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+  .container {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .logo img {
+      width: 150px; /* Adjust logo size for smaller screens */
+  }
+
+  .whatsapp-button {
+      width: 50px; /* Adjust WhatsApp button size for smaller screens */
+      height: 50px;
+      font-size: 20px; /* Adjust WhatsApp button icon size for smaller screens */
+  }
+
+  .whatsapp-button img {
+      width: 30px; /* Adjust WhatsApp button icon size for smaller screens */
+  }
+}
